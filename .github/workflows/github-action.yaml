@@ -31,4 +31,4 @@ jobs:
      - name: Build the Docker image
        run: docker build . --file Dockerfile --tag gali98/test:$(date +%s)
      - name: Docker push
-       run: docker push ${{sercrets.DOCKER_USERNAME}}/gali98/test
+       run: docker push ${{secrets.DOCKER_USERNAME}}/gali98/test
