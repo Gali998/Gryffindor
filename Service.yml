@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ctse-service
+spec:
+  type: ClusterIP
+  selector:
+    app: ctse
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 3000

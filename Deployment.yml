@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctse-deployment
+  labels:
+    app: ctse
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ctse
+  template:
+    metadata:
+      labels:
+        app: ctse
+    spec:
+      containers:
+      - name: ctse
+        image: gali98/ctse
+        ports:
+        - containerPort: 3000
