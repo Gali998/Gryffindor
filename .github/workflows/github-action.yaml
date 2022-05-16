@@ -30,4 +30,5 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
             image: gali98/ctse
-            image-tag: v1
+            tags: v1, latest
+            registry: docker.io
