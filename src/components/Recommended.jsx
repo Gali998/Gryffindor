@@ -6,9 +6,6 @@ import care3 from '../assets/c3.png'
 import care4 from '../assets/c4.png'
 import care5 from '../assets/c5.png'
 import care6 from '../assets/c6.png'
-import store from '../assets/shop.png'
-import spa from '../assets/spa2.png'
-import pay from '../assets/card.png'
 
 
 export default function Recommended() {
