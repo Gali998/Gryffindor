@@ -1,10 +1,10 @@
-import React,{useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import logo from '../assets/logo.png'
 
 export default function NavBar() {
 
-  const [navbarState,setNavbarState] = useState(false);
+  // const [navbarState,setNavbarState] = useState(false);
   return (
     <div>
       <Nav>
