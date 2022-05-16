@@ -27,8 +27,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build and push
-        uses: mr-smithers-excellent/docker-build-push@v5
+        uses: docker/build-push-action@v3
         with:
-            image: gali98/ctse
-            tags: v1, latest
-            registry: docker.io
+          push: true
+          tags: user/app:latest
