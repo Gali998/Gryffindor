@@ -36,3 +36,7 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag gali98/ctse-test:$(date +%s)
+      - name: Docker push
+        run: docker push gali98/ctse-test
